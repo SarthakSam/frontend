@@ -19,11 +19,12 @@ export class MainpageComponent implements OnInit {
     this.route.navigate(['signin'], { relativeTo: this.router});
   }
   signup(){
-    console.log("signup");
     this.route.navigate(['signup'], { relativeTo: this.router});
   }
-
   logout(){
     this.authControlService.getLogout().subscribe(message => console.log(message));
+  }
+  addbook(){
+    this.route.navigate(['addbook'], { relativeTo: this.router});
   }
 }
