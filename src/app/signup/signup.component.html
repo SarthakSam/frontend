@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title></title>
+</head>
+ 
+<body>
+    <form >
+        <label for="email">Email Address</label>
+        <input name= "email" type="email" [(ngModel)]="user.email" /><br>
+        <label for="firstname">Firstname</label>
+        <input name= "firstname" type="text" [(ngModel)]="user.firstname"/><br>
+        <label for="lastname">Lastname</label>
+        <input name= "lastname" type="text" [(ngModel)]="user.lastname" /><br>
+        <label for="username">Username</label>
+        <input name= "username" type="text" [(ngModel)]="user.username" /><br>
+        <label for="about">About</label>
+        <input name= "about" type="textArea" [(ngModel)]="user.about" /><br>
+        <label for="college">College</label>
+        <input name= "college" type="text" [(ngModel)]="user.college" /><br>
+        <label for="address">Address</label>
+        <input name= "address" type="text" [(ngModel)]="user.address" /><br>
+        <label for="mobileNo">MobileNo</label>
+        <input name= "mobileNo" type="text" [(ngModel)]="user.mobileNo" /><br>
+        <label for="password">Password</label>
+        <input name= "password" type="password" [(ngModel)]="user.password" /><br>
+        <input type="submit" (click)="signup()" />
+    </form>
+ 
+</body>
+ 
+</html>

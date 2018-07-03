@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title></title>
+</head>
+ 
+<body>
+    <form >
+        <label for="email">Email Address</label>
+        <input name="email" type="text" [(ngModel)]="email" required/>
+        <label for="password">Password</label>
+        <input name="password" type="password" [(ngModel)]="password" required />
+        <input type="submit" (click)="signin()" />
+    </form>
+ 
+</body>
+ 
+</html>
